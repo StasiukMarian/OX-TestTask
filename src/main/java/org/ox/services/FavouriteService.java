@@ -15,6 +15,14 @@ public class FavouriteService extends BaseApi {
                 .body(favouriteRequest)
                 .post("favourites");
     }
+
+    public Response getFavouriteById(int id) {
+        Allure.step("Get favourite item with id: " + id);
+        return RestAssured.given()
+                .spec(requestSpecification)
+                .get("favourites/" + id);
+    }
+
     public Response removeFromFavouriteById(int id){
         Allure.step("Remove from favourite image with id : " + id);
         return RestAssured.given()

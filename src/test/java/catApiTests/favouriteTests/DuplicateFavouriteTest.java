@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static org.ox.helpers.Constants.SUB_ID;
 import static org.ox.helpers.ResponseSpecs.responseSpecificationBadRequest400;
 import static org.ox.helpers.ResponseSpecs.responseSpecificationOk200;
 
@@ -35,7 +36,7 @@ public class DuplicateFavouriteTest {
     public void addToFavouriteTest() {
         FavouriteRequest favouriteRequest = new FavouriteRequest();
         favouriteRequest.setImage_id(imageId);
-        favouriteRequest.setSub_id("MarianStasiuk");
+        favouriteRequest.setSub_id(SUB_ID);
 
         FavouriteResponse favouriteResponse = favouriteService.addToFavourite(favouriteRequest)
                 .then()
