@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Weight {
-    public String imperial;
-    public String metric;
+    private String imperial;
+    private String metric;
 }

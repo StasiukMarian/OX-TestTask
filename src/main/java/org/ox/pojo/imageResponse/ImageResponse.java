@@ -8,9 +8,9 @@ import java.util.ArrayList;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ImageResponse {
-    public ArrayList<Breed> breeds;
-    public String id;
-    public String url;
-    public Integer width;
-    public Integer height;
+    private ArrayList<Breed> breeds;
+    private String id;
+    private String url;
+    private Integer width;
+    private Integer height;
 }
