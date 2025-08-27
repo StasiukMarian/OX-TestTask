@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Cat Api suite">
+    <test name="Api tests">
+        <packages>
+            <package name="catApiTests.favouriteTests.*"/>
+            <package name="catApiTests.imagesTests.*"/>
+            <package name="catApiTests.tokenTests.*"/>
+        </packages>
+    </test>
+</suite>
