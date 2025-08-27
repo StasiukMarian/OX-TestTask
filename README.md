@@ -10,6 +10,8 @@ api.key=YOUR_TOKEN
 
 mvn clean install
 
+## Generate Allure report:
+mvn allure:serve
 ## CI Integration (Jenkins):
 
 1. Create a new Jenkins job.
